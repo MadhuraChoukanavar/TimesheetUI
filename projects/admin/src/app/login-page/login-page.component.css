@@ -1,0 +1,38 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  
+  }
+  

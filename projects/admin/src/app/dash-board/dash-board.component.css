@@ -1,0 +1,11 @@
+.bg-dark{
+    height: 600px;
+    width: 250px;
+}
+.row{
+    border: 1px solid red;
+}
+.nav-link:hover .fs-5
+{
+    color: yellow;
+}
