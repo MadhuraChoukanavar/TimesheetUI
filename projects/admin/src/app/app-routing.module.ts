@@ -11,13 +11,16 @@ import { AddAccountComponent } from './add-account/add-account.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
+ 
   { path: 'login', component: LoginPageComponent },
   {path:'dashboard',component:DashBoardComponent},
   {path:'employeedisplay',component:EmployeeDisplayComponent},
-  {path:'addemployee',component:AddEmployeeComponent},
+ 
+ {path:'addemployee',component:AddEmployeeComponent},
   {path:'accountdisplay',component:AccountDisplayComponent},
-  {path:'addaccount',component:AddAccountComponent}
+  {path:'addaccount',component:AddAccountComponent},
+  { path:'', component: HomePageComponent },
+  { path:'**', component: HomePageComponent },
 ];
 
 @NgModule({
