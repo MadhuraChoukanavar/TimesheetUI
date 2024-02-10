@@ -1,0 +1,28 @@
+.container-fluid{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    width:65%;
+}
+.formborderbox{
+    border-radius: 5px;
+    box-shadow: 8px 8px 5px black;
+    padding: 15px;
+}
+.input{
+    height: 35px;
+    width: 200px;
+    border-radius: 6px;
+   border: 1px solid #333;
+}
+.w-30{
+    width: 30%;
+}
+.btn {
+   
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+}
+

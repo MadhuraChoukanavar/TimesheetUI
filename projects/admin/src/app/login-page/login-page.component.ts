@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './login-page.component.css'
 })
 export class LoginPageComponent {
+  showDashboard: boolean = false;
 
+  // handleLogin() {
+  //   // Perform login logic, and if successful, set showDashboard to true
+  //   this.showDashboard = true;
+  // }
 }
