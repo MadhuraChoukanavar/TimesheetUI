@@ -7,7 +7,7 @@
 } */
 .nav-pills li a span
 {
-    color: white;
+  color:   rgb(243,117,46);
   font-size:21px;
 }
 .nav-pills li a span:hover
