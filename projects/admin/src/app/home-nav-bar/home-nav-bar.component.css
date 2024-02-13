@@ -1,5 +1,6 @@
 body{
     width:100%;
+   
 }
 
 
@@ -8,24 +9,29 @@ body{
     /* border: 1px solid black; */
     height: 100px;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+ 
     
 }
+
 
 
 .navbar .navbar-brand img{
     height: 62px;
     width: 116px;
-    position: relative;
+
     left: 70px;
 }
-.navbar #navbarNav .navbar-nav .nav-item {
+/* .navbar #navbarNav .navbar-nav .nav-item {
     border: 1px solid black;
     height: 36px;
     width: 90px;
     border-radius: 15px;
     text-align: center;
-    position: relative;
-    left: 1000px;
+ 
+    display: flex;
+    
 }
 
 .navbar #navbarNav .navbar-nav .nav-item .nav-link{
@@ -33,4 +39,4 @@ body{
     font-weight: bolder;
     position: relative;
     bottom: 5px;
-}
+}  */

@@ -1,13 +1,16 @@
+
 .card{
 
     height: 600px;
     width: 100%;
     }
 
+
+
     .card-body{
         justify-content: center;
         text-align:center;
-        width: 75%;
+       width: auto;
         margin: 0 auto;
     } 
     

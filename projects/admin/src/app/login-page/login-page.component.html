@@ -1,5 +1,5 @@
 <!-- <p>login-page works!</p> -->
-<div class="login-container">
+<div  *ngIf="!showDashboard" class="login-container">
     <h2>Login Page</h2>
     <form>
       <label for="username">Username<span style=color:red>*</span></label>
@@ -10,7 +10,13 @@
 
       <span><a href="">Forget Password</a></span>
       
-      <button type="submit">Login</button>
+      <div class="container mt-5" style="color: blue;">
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+      
     </form>
   </div>
-    
+  <div *ngIf="showDashboard">
+    <!-- Include your Dashboard component here -->
+   <app-dash-board></app-dash-board>
+  </div> 
