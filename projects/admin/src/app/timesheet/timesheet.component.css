@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row
+  {
+    margin: 50px;
+  }
+  
+  
+  .col-md-2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 2px;
+  }
+  .col-md-4 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 2px;
+
+  }
+.col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: fit-content;
+}
+.col-md-12 row:hover
+  {
+    color: blueviolet;
+  }
