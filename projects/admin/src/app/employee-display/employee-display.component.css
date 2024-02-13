@@ -1,13 +1,24 @@
 
+.card{
+
+    height: 600px;
+    width: 100%;
+    }
+
+
+
     .card-body{
         justify-content: center;
         text-align:center;
        width: auto;
         margin: 0 auto;
     } 
-    /* .card-header{
-        text-align: right;
-    } */
+    
+    .header{
+        margin-left: 480px;
+
+        
+    }
     h1{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
            text-align: center;
@@ -18,11 +29,14 @@
        color: rgb(243,117,46);
     
     }
-    .input-group{
-        margin-left: 489.999px; 
+    .input-group{ 
+   
         background-color:black;
         color: rgb(243,117,46);
     }
+    /* .text{
+        margin-right: 100px;
+    } */
     
     .add{
      margin-left: 489.999px; 
@@ -38,7 +52,7 @@
         text-align: center;
         overflow: hidden;
         justify-content: center;
-        
+        margin-top: 80px;
         thead{
             background-color: 0 5px 10px grey;
         }
