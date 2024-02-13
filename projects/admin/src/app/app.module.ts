@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -13,12 +13,16 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AccountDisplayComponent } from './account-display/account-display.component';
 import { AddAccountComponent } from './add-account/add-account.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
 
+    AppComponent,
     HomePageComponent,
     LoginPageComponent,
     HomeNavBarComponent,
@@ -27,12 +31,16 @@ import { TimesheetComponent } from './timesheet/timesheet.component';
     AddEmployeeComponent,
     AccountDisplayComponent,
     AddAccountComponent,
-    TimesheetComponent
-   
+    TimesheetComponent,
+    ViewProfileComponent
+
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
