@@ -7,20 +7,22 @@ import { EmployeeDisplayComponent } from './employee-display/employee-display.co
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AccountDisplayComponent } from './account-display/account-display.component';
 import { AddAccountComponent } from './add-account/add-account.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
+
 
 
 
 const routes: Routes = [
- 
+
   { path: 'login', component: LoginPageComponent },
   {path:'dashboard',component:DashBoardComponent},
   {path:'employeedisplay',component:EmployeeDisplayComponent},
- 
- {path:'addemployee',component:AddEmployeeComponent},
+  {path:'addemployee',component:AddEmployeeComponent},
   {path:'accountdisplay',component:AccountDisplayComponent},
   {path:'addaccount',component:AddAccountComponent},
   { path:'', component: HomePageComponent },
   { path:'**', component: HomePageComponent },
+  { path: 'view-profile', component: ViewProfileComponent },
 ];
 
 @NgModule({
