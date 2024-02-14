@@ -1,150 +1,352 @@
-<div class="container-fluid " >
+<!-- 
+
+
+        <div class="container-fluid mt-4" >
     
        
  
-    <form class=" formborderbox border border-2 round round-3  ">
-        <h1  class="text-center p-3 mb-3">Employee details</h1>
-        <div class="d-flex">
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 mt-2 w-30">
-                    FirstName:
-                </p>
-                <input type="text"  class="input">
-            </div>
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 w-30" >
-                    LastName:
-                </p>
-                <input type="text"  class="input">
-            </div>
-        </div>
-        <div class="d-flex">
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 mt-2 w-30">
-                    Employee_code:
-                </p>
-                <input type="text"  class="input">
-            </div>
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 w-30">
-                    Designation:
-                </p>
-                <select  class="input"  >
-                    <option hidden>Choose</option>
-                    <option>CEO</option>
-                    <option>CFO</option>
-                    <option>CTO</option>
-                    <option>COO</option>
-                    <option>VP</option>
-                    <option>HR</option>
-                    <option>marketing Director</option>
-                    <option>software Engineer</option>
-                    <option>Sales Associate</option>
-                    <option>Graphic Design</option>
-                </select>
-            </div>
-        </div>
-        <div class="d-flex">
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 mt-2 w-30">
-                    Gender:
-                </p>
-                <select  class="input"  >
-                    <option hidden>Choose</option>
-                    <option>female</option>
-                    <option>male</option>
-                </select>    
-            </div>
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 w-30" >
-                    Date of joining:
-                </p>
-                <input type="datetime-local" class="input">
-            </div>
-        </div>
-        <div class="d-flex">
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 mt-2 w-30">
-                    Email:
-                </p>
-                <input type="email"  class="input">
-            </div>
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 w-30" >
-                    Password:
-                </p>
-                <input type="password"  class="input">
-            </div>
-        </div>
-        <div class="d-flex">
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 mt-2 w-30">
-                    Employement_type:
-                </p>
-                <select class="input">
-                    <option hidden>Choose</option>
-                    <option>Parment</option>
-                    <option>contract</option>
-                    <option>intenship</option>
-                </select>
+            <form class=" formborderbox round round-3    ">
+                <h1  class="text-center p-3 mb-3 employecolor text-decoration-underline">Employee Details</h1>
+                <div class="d-flex">
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 mt-2 w-30 text">
+                            FirstName:
+                        </p>
+                        <input type="text"  class="input">
+                    </div>
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3  mt-2 w-30 text" >
+                            LastName:
+                        </p>
+                        <input type="text"  class="input">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 mt-2 w-30 text">
+                            Employee Code:
+                        </p>
+                        <input type="text"  class="input">
+                    </div>
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 w-30 text">
+                            Designation:
+                        </p>
+                        <select  class="input"  >
+                            <option hidden>Choose</option>
+                            <option>CEO</option>
+                            <option>CFO</option>
+                            <option>CTO</option>
+                            <option>COO</option>
+                            <option>VP</option>
+                            <option>HR</option>
+                            <option>marketing Director</option>
+                            <option>software Engineer</option>
+                            <option>Sales Associate</option>
+                            <option>Graphic Design</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 mt-2 w-30 text">
+                            Gender:
+                        </p>
+                        <select  class="input"  >
+                            <option hidden>Choose</option>
+                            <option>female</option>
+                            <option>male</option>
+                        </select>    
+                    </div>
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 w-30 text" >
+                            Date Of Joining:
+                        </p>
+                        <input type="datetime-local" class="input">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 mt-2 w-30 text">
+                            Email:
+                        </p>
+                        <input type="email"  class="input">
+                    </div>
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 w-30 text" >
+                            Password:
+                        </p>
+                        <input type="password"  class="input">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 mt-2 w-30 text">
+                            Employement Type:
+                        </p>
+                        <select class="input">
+                            <option hidden>Choose</option>
+                            <option>Parment</option>
+                            <option>contract</option>
+                            <option>intenship</option>
+                        </select>
+                        
+                    </div>
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 w-30 text" >
+                            Status:
+                        </p>
+                        <select class="input">
+                            <option hidden>Choose</option>
+                            <option>Active</option>
+                            <option>On leave</option>
+                            <option>subbastical leave</option>
+                            <option>meternati leave</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 mt-2 w-30 text">
+                            Exit Date:
+                        </p>
+                        <input type="datetime-local"  class="input">
+                    </div>
+                    <div  class="d-flex col-md-6">
+                        <p class=" pe-3 w-30 text" >
+                           Remarks:
+                        </p>
+                        <input type="text"  class="input">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit" class=" btnbg w-25" >Submit</button>
+                </div> -->
+
+
+
+                 <!-- <div class="container-fluid mt-4">
+                    <h1 class="text-center mb-3 employecolor " style="font-size: 32px ; font-family: Arial, Helvetica, sans-serif;">Employee Details</h1>
+                    <form class="formborderbox round round-3 p-4 mt-3"  (ngSubmit)="submitForm()" #employeeForm="ngForm">
+                     
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-4 mb-3">
+                                <label for="firstName" class="form-label">First Name:</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="middleName" class="form-label">Middle Name:</label>
+                                <input type="text" class="form-control" id="middleName" placeholder="Enter your last name">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="lastName" class="form-label">Last Name:</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                            </div>
+                           
+                        </div>
+                       
                 
-            </div>
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 w-30" >
-                    Status:
-                </p>
-                <select class="input">
-                    <option hidden>Choose</option>
-                    <option>Active</option>
-                    <option>On leave</option>
-                    <option>subbastical leave</option>
-                    <option>meternati leave</option>
-                </select>
-            </div>
-        </div>
-        <div class="d-flex">
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 mt-2 w-30">
-                    Exit_date:
-                </p>
-                <input type="datetime-local"  class="input">
-            </div>
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 w-30" >
-                   Employee_remarks:
-                </p>
-                <input type="text"  class="input">
-            </div>
-        </div>
-        <div class="d-flex">
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 mt-2 w-30">
-                    Created_by:
-                </p>
-                <input type="text"  class="input">
-            </div>
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 w-30" >
-                   Created_on:
-                </p>
-                <input type="datetime-local"  class="input">
-            </div>
-        </div>
-        <div class="d-flex">
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 mt-2 w-30">
-                    Modified_by:
-                </p>
-                <input type="text"  class="input">
-            </div>
-            <div  class="d-flex col-md-6">
-                <p class=" pe-3 w-30" >
-                   Modified_on
-                </p>
-                <input type="datetime-local"  class="input">
-            </div>
-        </div>
-        <div class="btn">
-            <button type="submit" class="btn btn-dark w-25 ">Submit</button>
-        </div>
-       
+                        <div class="row mb-3">
+                            <div class="col-md-4 mb-3">
+                                <label for="employeeCode" class="form-label">Employee Code:</label>
+                                <input type="text" class="form-control" id="employeeCode" placeholder="Enter employee code">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="email" class="form-label">Employee Email:</label>
+                                <input type="text" class="form-control" id="email" placeholder="Enter employee Email">
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <label for="gender" class="form-label">Gender:</label>
+                                <select class="form-select" id="gender">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    </select>
+
+                            </div>
+                        </div>
+                
+                      
+                
+                        <div class="row mb-3">
+
+                            <div class="col-md-4 mb-3">
+                                <label for="dataOfJoining" class="form-label">Date Of Joining:</label>
+                                <input type="datetime-local" class="form-control" id="dataOfJoining">
+                            </div>
+
+                            
+                            <div class="col-md-4 mb-3">
+                                <label for="employmentType" class="form-label">Employeement Type:</label>
+                                <select class="form-select" id="employmentType">
+                                    <option hidden>Choose</option>
+                            <option>Parment</option>
+                            <option>contract</option>
+                            <option>intenship</option>
+                                    </select></div>
+
+                           
+                            <div class="col-md-4 mb-3">
+                                <label for="designation" class="form-label">Designation:</label>
+                                <select class="form-select" id="designation">
+                                    <option hidden>Choose</option>
+                                    <option>CEO</option>
+                                    <option>CFO</option>
+                                    <option>CTO</option>
+                                    <option>COO</option>
+                                    <option>VP</option>
+                                    <option>HR</option>
+                                    <option>marketing Director</option>
+                                    <option>software Engineer</option>
+                                    <option>Sales Associate</option>
+                                    <option>Graphic Design</option>
+                                  
+                                </select>
+                            </div>
+                            
+                        </div>
+                
+                        <div class="row mb-3">
+
+                            <div class="col-md-4 mb-3">
+                                <label for="status" class="form-label">Status:</label>
+                                <select class="form-select" id="status">
+                                    <option hidden>Choose</option>
+                                    <option>Active</option>
+                                    <option>In Active</option>
+                                    <option>On leave</option>
+                                    <option>subbastical leave</option>
+                                    <option>meternati leave</option>
+                                   
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="exitDate" class="form-label">Exit Date:</label>
+                                <input type="datetime-local" class="form-control" id="exitDate">
+                            </div>
+                           
+                        </div>
+                
+                        <div class="d-grid">
+                            <button type="submit" class="btn btnbg">Submit</button>
+                        </div>
+                    </form>
+                </div>  -->
+             
+
+
+
+
+                <div class="container-fluid mt-4">
+                    <h1 class="text-center mb-3 employecolor " style="font-size: 32px ; font-family: Arial, Helvetica, sans-serif;">Employee Details</h1>
+                    <form class="formborderbox round round-3 p-4 mt-3"  (submit)="SendEmployee(employeeForm.value)" #employeeForm="ngForm">
+                  
+                  
+                        <div class="row mb-3">
+                            <div class="col-md-4 mb-3">
+                                <label for="firstName" class="form-label">First Name:</label>
+                                <!-- <input type="text" class="form-control" id="firstName" placeholder="Enter your first name"> -->
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" [(ngModel)]="emp.firstName" name="firstName">
+                  
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="middleName" class="form-label">Middle Name:</label>
+                                <!-- <input type="text" class="form-control" id="middleName" placeholder="Enter your last name"> -->
+                                <input type="text" class="form-control" id="middleName" placeholder="Enter your Middle name" [(ngModel)]="emp.middleName" name="middleName">
+                  
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="lastName" class="form-label">Last Name:</label>
+                                <!-- <input type="text" class="form-control" id="lastName" placeholder="Enter your last name"> -->
+                                <input type="text" class="form-control" id="lasteName" placeholder="Enter your Last name" [(ngModel)]="emp.lastName" name="lastName">
+                            </div>
+                  
+                        </div>
+                  
+                  
+                        <div class="row mb-3">
+                            <div class="col-md-4 mb-3">
+                                <label for="employeeCode" class="form-label">Employee Code:</label>
+                                <input type="text" class="form-control" id="employeeCode" placeholder="Enter employee code" [(ngModel)]="emp.employeeCode" name="employeeCode">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="email" class="form-label">Employee Email:</label>
+                                <input type="text" class="form-control" id="email" placeholder="Enter employee Email" [(ngModel)]="emp.email" name="email">
+                            </div>
+                  
+                            <div class="col-md-4 mb-3">
+                                <label for="gender" class="form-label">Gender:</label>
+                                <select class="form-select" id="gender" >
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    </select>
+                  
+                            </div>
+                        </div>
+                  
+                        <div class="row mb-3">
+                  
+                            <div class="col-md-4 mb-3">
+                                <label for="dataOfJoining" class="form-label">Date Of Joining:</label>
+                                <input type="datetime-local" class="form-control" id="dataOfJoining">
+                            </div>
+                  
+                  
+                            <div class="col-md-4 mb-3">
+                                <label for="employmentType" class="form-label">Employeement Type:</label>
+                                <select class="form-select" id="employmentType">
+                                    <option hidden>Choose</option>
+                            <option>Parment</option>
+                            <option>contract</option>
+                            <option>intenship</option>
+                                    </select>
+                            </div>
+                  
+                  
+                            <div class="col-md-4 mb-3">
+                                <label for="designation" class="form-label">Designation:</label>
+                                <select class="form-select" id="designation">
+                                    <option hidden>Choose</option>
+                                    <option>CEO</option>
+                                    <option>CFO</option>
+                                    <option>CTO</option>
+                                    <option>COO</option>
+                                    <option>VP</option>
+                                    <option>HR</option>
+                                    <option>marketing Director</option>
+                                    <option>software Engineer</option>
+                                    <option>Sales Associate</option>
+                                    <option>Graphic Design</option>
+                  
+                                </select>
+                            </div>
+                  
+                        </div>
+                  
+                        <div class="row mb-3">
+                  
+                            <div class="col-md-4 mb-3">
+                                <label for="status" class="form-label">Status:</label>
+                                <select class="form-select" id="status">
+                                    <option hidden>Choose</option>
+                                    <option>Active</option>
+                                    <option>In Active</option>
+                                    <option>On leave</option>
+                                    <option>subbastical leave</option>
+                                    <option>meternati leave</option>
+                  
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="exitDate" class="form-label">Exit Date:</label>
+                                <input type="datetime-local" class="form-control" id="exitDate">
+                            </div>
+                  
+                        </div>
+                  
+                        <div class="d-grid">
+                            <button type="submit" class="btn btnbg">Submit</button>
+                        </div>
+                    </form>
+                  </div>

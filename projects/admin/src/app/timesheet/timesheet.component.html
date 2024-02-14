@@ -1,36 +1,143 @@
 
-<div class="container">
- 
-<div class="row">
-    <div class="col-md-12 d-flex justify-content-end" >
-        <button class="btn btn-primary">Search</button>
-      </div>
-    <div class="col-md-12 row bg-light" >
-      <div class="col-md-4">
-        <div class="box" ></div>
-      </div>
-      <div class="col-md-2">
-        <div class="box"></div>
-      </div>
-      <div class="col-md-2">
-        <div class="box"></div>
-      </div>
-      <div class="col-md-2">
-        <div class="box"></div>
-      </div>
-      <div class="col-md-2">
-        <div class="box"></div>
-      </div>
 
-      <div class="col-md-2">
-        <div class="box"></div>
-      </div>
-      <div class="col-md-2">
-        <div class="box"></div>
-      </div>
+<div class="container mt-5">
+  <div class="row p-4">
+  <table class="table table-bordered ">
+    <thead class="table-dark">
+      <tr>
+        <th></th>
+        
+        <th>Project</th>
+        <th>Task</th>
+        <th>billing Type</th>
+        <th style="width: 100px;">MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th style="color: rgb(164, 170, 171);">SAT</th>
+        <th style="color: rgb(164, 170, 171);">SUN</th>
+        <th>total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks; let i = index">
+        <td class="text-center"> <i class="bi bi-list-ul " style="font-size: 22px;"></i></td>
+        <td>
+          <select class="form-control"  [(ngModel)]="task.project">
+            <option value="" selected disabled>Select project</option>
+            <option value="task1">Project 1</option>
+            <option value="task2">Project 2</option>
+           </select>
+        </td>
+        <td>
+        <select class="form-control"  [(ngModel)]="task.task">
+          
+          <option value="" selected disabled>Select Task</option>
+          <option value="task1">task1</option>
+          <option value="task2">task2 </option>
+         </select>
+      </td>  
+      <td>
+        <select class="form-control"  [(ngModel)]="task.billingType">
+          <option value="" selected disabled> billing type</option>
+          <option value="task1">billable</option>
+          <option value="task2">non billable</option>
+         </select>
+      </td>
+      <td><div contenteditable="true" ></div></td>
+      <td><div contenteditable="true" ></div></td>
+      <td><div contenteditable="true" ></div></td>
+      <td><div contenteditable="true" ></div></td>
+      <td><div contenteditable="true" ></div></td>
+      <td><div contenteditable="true" ></div></td>
+      <td><div contenteditable="true" ></div></td>
+      <td><div contenteditable="true" ></div></td>
+      </tr>
      
-      
-    </div>
+   
+    </tbody>
+  </table>
 </div>
+
+
+  <div class="form-group">
+    <!-- <button type="button" class="btn btn-primary float-lg-end" (click)="addTaskRow()">Add Task</button> -->
+    <div>
+      <button class="btn btn-primary float-lg-end" (click)="addTaskRow()">
+        <i class="bi bi-plus-circle"></i>
+      </button>
+      </div>
+    <label for="submitButton "></label>
+    <button type="submit" class="btn btn-primary  float-lg-end" id="submitButton"  style="margin-right: 30px; font-size: medium;">Submit</button>
+
+    <label for="submitButton "></label>
+    <button type="submit" class="btn btn-primary  float-lg-end " id="submitButton" style="margin-right: 30px; font-size: medium;">Save</button>
+
+
+       
   </div>
 
+</div>
+
+
+<!-- <div class="container mt-5">
+  <div>
+  <table class="table table-bordered">
+  
+    <tbody>
+      <thead class="table-dark">
+        <tr>
+          <th></th>
+          
+          <th>Project</th>
+          <th>Task</th>
+          <th>billing Type</th>
+          <th style="width: 100px;">Mon</th>
+          <th>Tues</th>
+          <th>wed</th>
+          <th>Thru</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+          <th>total</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let task of tasks; let i = index">
+        <td class="text-center">
+          <i class="bi bi-list-ul" style="font-size: 22px;"></i>
+        </td>
+        <td>
+          <select class="form-control" [(ngModel)]="task.project">
+            <option value="" selected disabled>Select project</option>
+            <option value="task1">Project 1</option>
+            <option value="task2">Project 2</option>
+          </select>
+        </td>
+        <td>
+          <select class="form-control" [(ngModel)]="task.task">
+            <option value="" selected disabled>Select Task</option>
+          <option value="task1">task1</option>
+          <option value="task2">task2 </option>
+          </select>
+        </td>
+        <td>
+          <select class="form-control" [(ngModel)]="task.billingType">
+            <option value="" selected disabled> billing type</option>
+            <option value="task1">billable</option>
+            <option value="task2">non billable</option>
+          </select>
+        </td>
+        <td *ngFor="let day of task.days; let j = index">
+          <div contenteditable="true" [(ngModel)]="task.days[j]"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <div class="form-group">
+    <button type="button" class="btn btn-primary float-lg-end" (click)="addTaskRow()">Add Task</button>
+    <button type="button" class="btn btn-primary float-lg-end" (click)="submit()">Submit</button>
+  </div>
+</div> -->

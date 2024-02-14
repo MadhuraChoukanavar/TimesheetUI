@@ -13,6 +13,9 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AccountDisplayComponent } from './account-display/account-display.component';
 import { AddAccountComponent } from './add-account/add-account.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
+import { TimedisplayComponent } from './timedisplay/timedisplay.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,12 +30,16 @@ import { TimesheetComponent } from './timesheet/timesheet.component';
     AddEmployeeComponent,
     AccountDisplayComponent,
     AddAccountComponent,
-    TimesheetComponent
+    TimesheetComponent,
+    TimedisplayComponent
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    // ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
