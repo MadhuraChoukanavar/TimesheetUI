@@ -5,7 +5,10 @@ import { EmployeeserviceService } from "./employeeservice.service";
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e4d16d1883385f2176f481207501d4a47ae71106
 @Injectable({providedIn: 'root'})
 export class EmployeeRepo{
 
@@ -42,3 +45,7 @@ export class EmployeeRepo{
   }
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e4d16d1883385f2176f481207501d4a47ae71106

@@ -1,30 +1,65 @@
+<<<<<<< HEAD
 /* .container-fluid{
     box-sizing: border-box;
     margin: auto;
     padding: 0;
     width:65%;
+=======
+.container-fluid{
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  width:70%;
+  margin-top: 70px;
+}
+.employecolor{
+  color: rgb(243,117,46);
+>>>>>>> e4d16d1883385f2176f481207501d4a47ae71106
 }
 .formborderbox{
-    border-radius: 5px;
-    box-shadow: 8px 8px 5px black;
-    padding: 15px;
+  border-radius: 5px;
+
+  padding: 15px;
+
 }
 .input{
-    height: 35px;
-    width: 200px;
-    border-radius: 6px;
-   border: 1px solid #333;
+  height: 35px;
+  width: 200px;
+  border-radius: 6px;
+ border: 1px solid #333;
 }
 .w-30{
-    width: 30%;
+  width: 45%;
 }
 .btn {
+<<<<<<< HEAD
    
     display: flex;
     justify-content:center ;
     align-items: center;
     text-align: center;
 } */
+=======
+
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  text-align: center;
+
+
+}
+.btnbg{
+  background-color: rgb(243,117,46);;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 20px;
+
+}
+.text{
+  font-size: 20px;
+  font-weight: 500px;
+}
+>>>>>>> e4d16d1883385f2176f481207501d4a47ae71106
 
 
 

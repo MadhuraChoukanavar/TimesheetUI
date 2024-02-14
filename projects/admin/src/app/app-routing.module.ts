@@ -7,17 +7,34 @@ import { EmployeeDisplayComponent } from './employee-display/employee-display.co
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AccountDisplayComponent } from './account-display/account-display.component';
 import { AddAccountComponent } from './add-account/add-account.component';
+
+import { ViewProfileComponent } from './view-profile/view-profile.component';
+
+
 import { TimesheetComponent } from './timesheet/timesheet.component';
 import { TimedisplayComponent } from './timedisplay/timedisplay.component';
 
 
 
+
 const routes: Routes = [
+<<<<<<< HEAD
  
   { path:'login',component: LoginPageComponent },
   {path:'dashboard',component:DashBoardComponent},
   {path:'employeedisplay',component:EmployeeDisplayComponent},
   {path:'addemployee',component:AddEmployeeComponent},
+=======
+
+  { path: 'login', component: LoginPageComponent },
+  {path:'dashboard',component:DashBoardComponent},
+  {path:'employeedisplay',component:EmployeeDisplayComponent},
+
+  {path:'addemployee',component:AddEmployeeComponent},
+
+ {path:'addemployee',component:AddEmployeeComponent},
+
+>>>>>>> e4d16d1883385f2176f481207501d4a47ae71106
   {path:'accountdisplay',component:AccountDisplayComponent},
   {path:'addaccount',component:AddAccountComponent},
   {path:'timesheet',component:TimesheetComponent},
@@ -25,7 +42,11 @@ const routes: Routes = [
   {path:'',component:HomePageComponent},
  
   { path:'**', component: HomePageComponent },
+<<<<<<< HEAD
   
+=======
+  { path: 'view-profile', component: ViewProfileComponent },
+>>>>>>> e4d16d1883385f2176f481207501d4a47ae71106
 ];
 
 @NgModule({
